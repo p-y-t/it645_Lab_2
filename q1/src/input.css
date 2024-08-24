@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.recipe-card {
+    @apply relative rounded-lg shadow-md min-w-[330px] max-w-[330px] overflow-hidden mx-5;
+}
+
+.recipe-time{
+    @apply absolute top-0 right-0 bg-secondary text-white p-2 font-medium;
+}
+
+.recipe-image{
+    @apply w-full h-52;
+}
+
+.recipe-title {
+    @apply text-2xl font-bold p-6 text-center;
+  }
+  
+  .recipe-description {
+    @apply  text-center px-4 pb-8 text-base italic;
+  }
+
+  @variants hover {
+    .drawline {
+        text-decoration: underline;
+      }
+  }
